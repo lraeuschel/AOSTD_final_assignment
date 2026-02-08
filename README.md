@@ -11,8 +11,8 @@ The repository follows a structured workflow separating raw data, processed outp
 
     project-root/
     ├── data/
-    │   ├── raw/                # Raw input data (version controlled)
-    │   └── processed/
+    │   ├── raw/                # Raw input data
+    │   └── processed/          # Output data
     ├── scripts/
     │   ├── 01_data_import_cleaning.R
     │   └── 02_spatial_analysis.R
@@ -171,14 +171,6 @@ Ensure that all required shapefile components are present:
 - .shx  
 - .prj  
 - .cpg  
-
----
-
-### Missing Raster Outputs
-
-If raster files are not available, rerun:
-
-    scripts/02_spatial_analysis.R
 
 ---
 
