@@ -7,3 +7,5 @@ data/processed/
 *.fdb_latexmk
 *.fls
 *.synctex.gz
+*.bbl
+*.blg
