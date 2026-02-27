@@ -1,3 +1,9 @@
 data/processed/
 .Rhistory
 .RData
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz

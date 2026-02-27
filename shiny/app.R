@@ -661,24 +661,6 @@ server <- function(input, output, session) {
         p
     })
 
-
-    # ----------------------------
-    # Trend data table
-    # ----------------------------
-    output$trend_table <- DT::renderDT(
-        {
-            data <- trend_data()
-            # Remove geometry column if it exists
-            if ("geometry" %in% colnames(data)) {
-                data <- data %>% st_drop_geometry()
-            }
-            data
-        },
-        options = list(
-            pageLength = 10,
-            scrollX = TRUE
-        )
-    )
     # Station map
     output$trend_station_map <- renderLeaflet({
         m <- leaflet() %>%
